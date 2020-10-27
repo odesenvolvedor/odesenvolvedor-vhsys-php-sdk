@@ -1,8 +1,8 @@
 {
-    "name": "odesenvolvedor/clearsale-php-sdk",
-    "description": "ClearSale API Client",
-    "version": "1.0.0",
-    "homepage": "https://github.com/odesenvolvedor/clearsale-php-sdk",
+    "name": "odesenvolvedor/vhsys-php-sdk",
+    "description": "Integração não oficial Vhsys",
+    "version": "v1.0-alpha",
+    "homepage": "https://github.com/odesenvolvedor/odesenvolvedor-vhsys-php-sdk/",
     "license": "GPL-3.0 License",
     "type": "library",
     "keywords": [
