@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Vhsys\\": "vhsys-php-sdk/src/Vhsys/"
+            "Vhsys\\": "odesenvolvedor/vhsys-php-sdk/src/Vhsys/"
         }
     },
     "minimum-stability": "dev",
