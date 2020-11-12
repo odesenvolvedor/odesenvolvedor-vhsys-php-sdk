@@ -50,4 +50,15 @@ abstract class AbstractEntity implements VhsysInterface, VhsysSerializable
         }
         return $arr;
     }
+
+    public function unsetEmptyProps()
+    {
+        $arr = get_object_vars($this);
+        foreach ($arr as $k => $v) {
+            if (!is_bool($v) && $v !== 0 && empty($v)) {
+                unset($this->$k);
+            }
+        }
+        return $this;
+    }
 }
