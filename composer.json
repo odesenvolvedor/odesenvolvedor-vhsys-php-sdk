@@ -1,9 +1,9 @@
 {
     "name": "odesenvolvedor/vhsys-php-sdk",
     "description": "Integração não oficial Vhsys",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "homepage": "https://github.com/odesenvolvedor/odesenvolvedor-vhsys-php-sdk/",
-    "license": "GPL-3.0 License",
+    "license": "proprietary",
     "type": "library",
     "keywords": [
         "Vhsys",
