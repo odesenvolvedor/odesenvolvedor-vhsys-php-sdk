@@ -31,7 +31,7 @@ class ProdutoService extends BaseService
         return $this->client->delete("produtos/{$id}");
     }
 
-    public function lancarEstoque($id, ProdutoEstoque $params)
+    public function lancarEstoque($id, \JsonSerializable $params)
     {
         return $this->client->post("produtos/{$id}/estoque", [ 'json' => $params ] );
     }
