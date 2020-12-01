@@ -20,8 +20,11 @@ class ProdutoEstoque extends AbstractEntity
      * @var string
      */
     protected $obs_estoque;
-
-
+    /**
+    * @var string
+    */
+    protected $identificacao;
+    
     /**
      * Get the value of tipo_estoque
      *
@@ -114,6 +117,36 @@ class ProdutoEstoque extends AbstractEntity
     public function setObsEstoque(string $obs_estoque)
     {
         $this->obs_estoque = $obs_estoque;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of identificacao
+     *
+     * @return  string
+     */ 
+    public function getIdentificacao()
+    {
+        return $this->identificacao;
+    }
+
+    /**
+     * Set the value of identificacao
+     *
+     * @param  string  $identificacao
+     *
+     * @return  self
+     */ 
+    public function setIdentificacao(string $identificacao)
+    {
+        $exp = \explode('_', $identificacao);
+
+        if ($exp[0] != 'Ped') {
+            $identificacao = 'Ped_' . $identificacao;
+        }
+
+        $this->identificacao = $identificacao;
 
         return $this;
     }
