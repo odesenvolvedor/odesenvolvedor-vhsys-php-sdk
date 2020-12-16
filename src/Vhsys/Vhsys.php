@@ -6,7 +6,7 @@ use Vhsys\Client;
 use Vhsys\ClienteService;
 use Vhsys\ProdutoService;
 use Vhsys\PedidoService;
-
+use Vhsys\VendedorService;
 
 class Vhsys
 {
@@ -44,5 +44,10 @@ class Vhsys
     public function produtos(): ProdutoService
     {
         return new ProdutoService($this->client);
+    }
+
+    public function vendedores(): VendedorService
+    {
+        return new VendedorService($this->client);
     }
 }
